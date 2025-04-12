@@ -1,7 +1,8 @@
-💳 Digital Wallet Application
+# 💳 Digital Wallet Application
+
 A secure, user-friendly, and stylish digital wallet solution built using the MERN stack — MongoDB, Express.js, React, and Node.js — along with TypeScript, Tailwind CSS, and Vite. The project is modularly structured into client, server, and shared directories for clean code organization and easy scalability.
 
-✨ Key Features
+# ✨ Key Features
 🌐 Modern UI: Clean navigation with responsive Tailwind-powered design
 
 🔁 Shared Codebase: Reusable logic and types for maintainability
@@ -12,7 +13,7 @@ A secure, user-friendly, and stylish digital wallet solution built using the MER
 
 🧩 Drizzle ORM Ready: Database connection setup in place
 
-🚀 Getting Started
+# 🚀 Getting Started
 1. Clone the Repository
 
 git clone https://github.com/your-username/digital-wallet.git
@@ -26,7 +27,7 @@ npm install
 
 npm run dev
 
-🧱 Tech Stack
+# 🧱 Tech Stack
 💥 Built with the MERN Stack
 
 MongoDB – (To be integrated) NoSQL database for secure data storage
@@ -37,7 +38,7 @@ React – Component-based frontend for a dynamic UI
 
 Node.js – Runtime environment for the backend
 
-Additional Tools & Technologies:
+# Additional Tools & Technologies:
 
 🟦 TypeScript – Type-safe development
 
