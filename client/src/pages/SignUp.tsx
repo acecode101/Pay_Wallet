@@ -85,10 +85,8 @@ export default function SignUp() {
         <h2 className="text-2xl font-bold text-neutral-800">Create a new account</h2>
         <p className="mt-2 text-sm text-neutral-500">
           Or{" "}
-          <Link href="/">
-            <a className="text-primary hover:text-primary-dark font-medium">
-              sign in to your existing account
-            </a>
+          <Link href="/" className="text-primary hover:text-primary-dark font-medium">
+            sign in to your existing account
           </Link>
         </p>
       </div>

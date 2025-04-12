@@ -34,33 +34,33 @@ export function AppLayout({ children }: AppLayoutProps) {
           <div className="flex justify-between h-16">
             <div className="flex">
               <div className="flex-shrink-0 flex items-center">
-                <Link href="/dashboard">
-                  <a className="h-8 w-auto flex items-center">
-                    <span className="text-primary text-2xl font-bold">Pay</span>
-                    <span className="text-[#002E6E] text-2xl font-bold">Wallet</span>
-                  </a>
+                <Link href="/dashboard" className="h-8 w-auto flex items-center">
+                  <span className="text-primary text-2xl font-bold">Pay</span>
+                  <span className="text-[#002E6E] text-2xl font-bold">Wallet</span>
                 </Link>
               </div>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:items-center">
               <div className="flex items-center space-x-4">
-                <Link href="/dashboard">
-                  <a className={`px-3 py-2 text-sm font-medium rounded-md transition ${
+                <Link 
+                  href="/dashboard"
+                  className={`px-3 py-2 text-sm font-medium rounded-md transition ${
                     location === '/dashboard' 
                       ? 'text-neutral-800 bg-neutral-100' 
                       : 'text-neutral-600 hover:text-neutral-800 hover:bg-neutral-100'
-                  }`}>
-                    Dashboard
-                  </a>
+                  }`}
+                >
+                  Dashboard
                 </Link>
-                <Link href="/history">
-                  <a className={`px-3 py-2 text-sm font-medium rounded-md transition ${
+                <Link 
+                  href="/history"
+                  className={`px-3 py-2 text-sm font-medium rounded-md transition ${
                     location === '/history' 
                       ? 'text-neutral-800 bg-neutral-100' 
                       : 'text-neutral-600 hover:text-neutral-800 hover:bg-neutral-100'
-                  }`}>
-                    History
-                  </a>
+                  }`}
+                >
+                  History
                 </Link>
               </div>
               <div className="ml-3 relative">
@@ -102,29 +102,31 @@ export function AppLayout({ children }: AppLayoutProps) {
         </div>
         <div className={`${mobileMenuOpen ? 'block' : 'hidden'} sm:hidden`}>
           <div className="pt-2 pb-3 space-y-1">
-            <Link href="/dashboard">
-              <a className={`block px-3 py-2 text-base font-medium ${
+            <Link 
+              href="/dashboard"
+              className={`block px-3 py-2 text-base font-medium ${
                 location === '/dashboard' 
                   ? 'text-neutral-800 bg-neutral-100' 
                   : 'text-neutral-600 hover:text-neutral-800 hover:bg-neutral-100'
-              }`}>
-                <div className="flex items-center">
-                  <Home size={18} className="mr-2" />
-                  Dashboard
-                </div>
-              </a>
+              }`}
+            >
+              <div className="flex items-center">
+                <Home size={18} className="mr-2" />
+                Dashboard
+              </div>
             </Link>
-            <Link href="/history">
-              <a className={`block px-3 py-2 text-base font-medium ${
+            <Link 
+              href="/history"
+              className={`block px-3 py-2 text-base font-medium ${
                 location === '/history' 
                   ? 'text-neutral-800 bg-neutral-100' 
                   : 'text-neutral-600 hover:text-neutral-800 hover:bg-neutral-100'
-              }`}>
-                <div className="flex items-center">
-                  <Clock size={18} className="mr-2" />
-                  History
-                </div>
-              </a>
+              }`}
+            >
+              <div className="flex items-center">
+                <Clock size={18} className="mr-2" />
+                History
+              </div>
             </Link>
           </div>
           <div className="pt-4 pb-3 border-t border-neutral-200">

@@ -70,10 +70,15 @@ export class MemStorage implements IStorage {
   async createTransaction(transaction: InsertTransaction): Promise<Transaction> {
     const id = this.transactionIdCounter++;
     const now = new Date();
+    
+    // Ensure all required fields are provided with defaults to satisfy the type
     const newTransaction: Transaction = { 
       ...transaction, 
       id, 
-      timestamp: now 
+      timestamp: now,
+      senderId: transaction.senderId ?? null,
+      receiverId: transaction.receiverId ?? null,
+      note: transaction.note ?? null
     };
     
     this.transactions.set(id, newTransaction);

@@ -71,10 +71,8 @@ export default function SignIn() {
         <h2 className="text-2xl font-bold text-neutral-800">Sign in to your account</h2>
         <p className="mt-2 text-sm text-neutral-500">
           Or{" "}
-          <Link href="/signup">
-            <a className="text-primary hover:text-primary-dark font-medium">
-              create a new account
-            </a>
+          <Link href="/signup" className="text-primary hover:text-primary-dark font-medium">
+            create a new account
           </Link>
         </p>
       </div>
@@ -143,10 +141,8 @@ export default function SignIn() {
                   </FormItem>
                 )}
               />
-              <Link href="#">
-                <a className="text-sm font-medium text-primary hover:text-primary-dark">
-                  Forgot your password?
-                </a>
+              <Link href="#" className="text-sm font-medium text-primary hover:text-primary-dark">
+                Forgot your password?
               </Link>
             </div>
             <Button 
