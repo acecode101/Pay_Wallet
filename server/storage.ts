@@ -52,7 +52,8 @@ export class MemStorage implements IStorage {
 
   async createUser(userData: InsertUser): Promise<User> {
     const id = this.userIdCounter++;
-    const user: User = { ...userData, id, balance: 0 };
+    // Set minimum balance of 1000 Rs for all new accounts
+    const user: User = { ...userData, id, balance: 1000 };
     this.users.set(id, user);
     return user;
   }
