@@ -17,6 +17,7 @@ A secure, user-friendly, and stylish digital wallet solution built using the MER
 1. Clone the Repository
 
 git clone https://github.com/your-username/digital-wallet.git
+
 cd digital-wallet
 
 2. Install Dependencies
