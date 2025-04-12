@@ -31,7 +31,7 @@ npm run dev
 # 🧱 Tech Stack
 💥 Built with the MERN Stack
 
-MongoDB – (To be integrated) NoSQL database for secure data storage
+MongoDB – NoSQL database for secure data storage
 
 Express.js – Backend web framework (setup in progress)
 
